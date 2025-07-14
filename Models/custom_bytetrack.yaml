@@ -1,0 +1,19 @@
+# custom_bytetrack.yaml
+# Parameters for ByteTrack, adapted for common ID switching issues
+
+track_thresh: 0.5        # Confidence threshold for high-score detections to start a new track
+high_thresh: 0.7         # Confidence threshold for high-score detections to be associated with existing tracks
+low_thresh: 0.1          # Confidence threshold for low-score detections, used for secondary association
+
+new_track_thresh: 0.7    # Confidence threshold to create a new track from an unmatched detection
+
+track_buffer: 60         # <--- IMPORTANT: Number of frames a track can be 'lost' before being deleted.
+                         #      Increased from common defaults (like 30) for better re-ID after occlusions.
+                         #      You might even try 90 or 120 if players are hidden for longer periods.
+
+match_thresh: 0.8        # IoU matching threshold for associating detections with existing tracks.
+                         # A higher value is stricter, a lower value is more lenient.
+
+min_box_area: 10         # Minimum bounding box area (width*height) for a detection to be considered.
+mot20: False             # Use MOT20 dataset parameters (usually False for custom videos)
+fuse_rematch: False      # Whether to use appearance features for rematches (Advanced, often handled internally by tracker)

@@ -1,0 +1,11 @@
+ultralytics==8.0.219
+opencv-python-headless
+lap
+matplotlib
+pandas
+tqdm
+scikit-learn
+torch>=1.13.0
+torchvision
+Pillow
+git+https://github.com/facebookresearch/segment-anything.git
