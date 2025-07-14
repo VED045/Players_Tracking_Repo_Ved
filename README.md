@@ -19,8 +19,8 @@ Player_Tracking/
 ├── Models/
 │   └── best.pt                       # YOLOv8 trained weights
 ├── Outputs/
-│   ├── ultra_accurate_tracking.avi  # Final annotated video
-│   └── tracked_frames/
+│   ├── final_tracking_video.avi  # Final annotated video
+│   └── final_tracked_frames/
 │       └── frame_0001.jpg
 │       └── ...
 ├── Player_Tracking.ipynb            # Main notebook (run this)
@@ -42,7 +42,14 @@ Open the notebook and run the first cell:
 
 ---
 
-## 📂 Step 2: Mount Google Drive
+## 📂 Step 2: Add the folder to your google drive
+
+Add the Player_Tracking Folder as it is to your google drive.
+
+---
+
+
+## 📂 Step 3: Mount Google Drive
 
 Run this in Colab:
 
@@ -61,7 +68,7 @@ Make sure your Drive has the following path:
 
 ---
 
-## 🎯 Step 3: Run Ultra-Accurate Player Tracking
+## 🎯 Step 4: Run Ultra-Accurate Player Tracking
 
 This notebook will:
 
@@ -76,26 +83,26 @@ This notebook will:
    - IoU-based box overlap
    - Position prediction (motion-based)
 6. Save:
-   - A final annotated video (`Outputs/ultra_accurate_tracking.avi`)
-   - Per-frame images (`Outputs/tracked_frames/`)
+   - A final annotated video (`Outputs/final_tracking_video.avi`)
+   - Per-frame images (`Outputs/final_tracked_frames/`)
 
 ---
 
+## Step 5: 
+You can check the final output in the outputs folder at final_tracking_video.avi
+You can also check the per frame output for validation at final_tracked_frames.
+
+---
+
+
 ## 🧪 Output Example
 
-- ✅ `ultra_accurate_tracking.avi`: Player boxes + IDs + confidence drawn on the video
+- ✅ `final_tracking_video.avi`: Player boxes + IDs + confidence drawn on the video
 - ✅ `frame_00XX.jpg`: Individual annotated frames
 - ✅ Player confidence, ID mapping printed after tracking
 
 ---
 
-## 📦 Installation (If running locally)
-
-```bash
-pip install -r requirements.txt
-```
-
----
 
 ## 💡 Key Features
 
@@ -110,16 +117,10 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 Future Work
-
-- Replace ResNet with SAM-only segmentation
-- Integrate jersey number recognition (OCR-based)
-- Add team clustering (unsupervised)
-
----
+##  Please Contact me if there are any issues.
 
 ## 🙋‍♂️ Author
 
 **Ved Deshpande**  
-[LinkedIn](https://linkedin.com) | [GitHub](https://github.com)  
+[LinkedIn](www.linkedin.com/in/ved-deshpande-a632b7282) | [GitHub]([https://github.com](https://github.com/VED045))  
 AI in Sports | Object Tracking | Computer Vision
